@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LifeSync • Nav</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@800&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Scaling + centering system */
+    #widget-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;  /* center horizontally */
+      align-items: center;      /* center vertically */
+      overflow: hidden;
+    }
+
+    #widget-scale {
+      transform-origin: center center; /* scale from center */
+      transform: scale(1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: nowrap;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="widget-wrapper">
+    <div id="widget-scale">
+      <div id="page">
+        <div class="navbar">
+          <div class="nav">
+            <a class="nav-btn" id="nav-home" href="#">
+              <img src="./assets/icons/home.svg" class="icon" alt="Home">
+              <span class="label">Home</span>
+            </a>
+
+            <a class="nav-btn" id="nav-tasks" href="#">
+              <img src="./assets/icons/tasks.svg" class="icon" alt="Tasks">
+              <span class="label">Tasks</span>
+            </a>
+
+            <a class="nav-btn" id="nav-goals" href="#">
+              <img src="./assets/icons/goals.svg" class="icon" alt="Goals">
+              <span class="label">Goals</span>
+            </a>
+
+            <a class="nav-btn" id="nav-habits" href="#">
+              <img src="./assets/icons/habits.svg" class="icon" alt="Habits">
+              <span class="label">Habits</span>
+            </a>
+
+            <a class="nav-btn" id="nav-health" href="#">
+              <img src="./assets/icons/health.svg" class="icon" alt="Health">
+              <span class="label">Health</span>
+            </a>
+
+            <a class="nav-btn" id="nav-knowledge" href="#">
+              <img src="./assets/icons/knowledge.svg" class="icon" alt="Knowledge">
+              <span class="label">Knowledge</span>
+            </a>
+
+            <a class="nav-btn" id="nav-finance" href="#">
+              <img src="./assets/icons/finance.svg" class="icon" alt="Finance">
+              <span class="label">Finance</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Link Setup Modal -->
+  <div id="linkModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Set Up Your Links</h2>
+      <div class="link-inputs">
+        <label>Home: <input type="url" id="link-home" placeholder="Add link" /></label>
+        <label>Tasks: <input type="url" id="link-tasks" placeholder="Add link" /></label>
+        <label>Goals: <input type="url" id="link-goals" placeholder="Add link" /></label>
+        <label>Habits: <input type="url" id="link-habits" placeholder="Add link" /></label>
+        <label>Health: <input type="url" id="link-health" placeholder="Add link" /></label>
+        <label>Knowledge: <input type="url" id="link-knowledge" placeholder="Add link" /></label>
+        <label>Finance: <input type="url" id="link-finance" placeholder="Add link" /></label>
+      </div>
+      <button id="saveLinks">Save Links</button>
+    </div>
+  </div>
+  
+  <!-- Floating settings button -->
+<button id="settingsBtn" class="settings-btn">
+  ⚙️
+</button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LifeSync • Nav</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@800&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Scaling + centering system */
+    #widget-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;  /* center horizontally */
+      align-items: center;      /* center vertically */
+      overflow: hidden;
+    }
+
+    #widget-scale {
+      transform-origin: center center; /* scale from center */
+      transform: scale(1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: nowrap;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="widget-wrapper">
+    <div id="widget-scale">
+      <div id="page">
+        <div class="navbar">
+          <div class="nav">
+            <a class="nav-btn" id="nav-home" href="#">
+              <img src="./assets/icons/home.svg" class="icon" alt="Home">
+              <span class="label">Home</span>
+            </a>
+
+            <a class="nav-btn" id="nav-tasks" href="#">
+              <img src="./assets/icons/tasks.svg" class="icon" alt="Tasks">
+              <span class="label">Tasks</span>
+            </a>
+
+            <a class="nav-btn" id="nav-goals" href="#">
+              <img src="./assets/icons/goals.svg" class="icon" alt="Goals">
+              <span class="label">Goals</span>
+            </a>
+
+            <a class="nav-btn" id="nav-habits" href="#">
+              <img src="./assets/icons/habits.svg" class="icon" alt="Habits">
+              <span class="label">Habits</span>
+            </a>
+
+            <a class="nav-btn" id="nav-health" href="#">
+              <img src="./assets/icons/health.svg" class="icon" alt="Health">
+              <span class="label">Health</span>
+            </a>
+
+            <a class="nav-btn" id="nav-knowledge" href="#">
+              <img src="./assets/icons/knowledge.svg" class="icon" alt="Knowledge">
+              <span class="label">Knowledge</span>
+            </a>
+
+            <a class="nav-btn" id="nav-finance" href="#">
+              <img src="./assets/icons/finance.svg" class="icon" alt="Finance">
+              <span class="label">Finance</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Link Setup Modal -->
+  <div id="linkModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Set Up Your Links</h2>
+      <div class="link-inputs">
+        <label>Home: <input type="url" id="link-home" placeholder="Add link" /></label>
+        <label>Tasks: <input type="url" id="link-tasks" placeholder="Add link" /></label>
+        <label>Goals: <input type="url" id="link-goals" placeholder="Add link" /></label>
+        <label>Habits: <input type="url" id="link-habits" placeholder="Add link" /></label>
+        <label>Health: <input type="url" id="link-health" placeholder="Add link" /></label>
+        <label>Knowledge: <input type="url" id="link-knowledge" placeholder="Add link" /></label>
+        <label>Finance: <input type="url" id="link-finance" placeholder="Add link" /></label>
+      </div>
+      <button id="saveLinks">Save Links</button>
+    </div>
+  </div>
+  
+  <!-- Floating settings button -->
+<button id="settingsBtn" class="settings-btn">
+  ⚙️
+</button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
